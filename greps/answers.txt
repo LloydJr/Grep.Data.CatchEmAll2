@@ -1,38 +1,59 @@
 # Part 1
 ### a)
-
-
+grep "(Pokemon Name)" forest/filescan_00.( 1 || 2 || 3 || 4 ) > captured/(Pokemon Name).txt
 
 
 ### b)
-
+Captured all 15 Pokemon (Check Captured Directory)
 
 
 ### c)
+filescan_00.1
+'Beedrill'
+'Bulbasaur'
+'Butterfree'
+'Blastoise'
 
+filescan_00.2
+'Charizard'
+'Charmander'
+'Charmeleon'
 
+filescan_00.3
+'Ivysaur'
+'Jigglypuff'
+'Meowth'
+'Pikachu'
 
-
-
-
-
-
-
-
-
-
+filescan_00.3
+'Psyduck'
+'Squirtle'
+'Venusaur'
+'Wartortle'
 
 # Part 2
 ### a)
-
-
-
-
-
+ls captured |wc -l
 
 ### b)
-
-
+find captured/ -type f -exec wc -l {} + | sort -rn
+     539 total
+      40 captured//pikachu.txt
+      40 captured//charizard.txt
+      40 captured//beedrill.txt
+      38 captured//butterfree.txt
+      37 captured//wartortle.txt
+      37 captured//psyduck.txt
+      37 captured//charmeleon.txt
+      37 captured//blastoise.txt
+      36 captured//charmander.txt
+      34 captured//squirtle.txt
+      34 captured//jigglypuff.txt
+      33 captured//meowth.txt
+      33 captured//ivysaur.txt
+      32 captured//venusaur.txt
+      30 captured//bulbasaur.txt
+       1 captured//instruction.txt
 
 
 
